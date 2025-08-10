@@ -1,6 +1,6 @@
 dataset:
   repo_id: lava8888/ArrangeVegetables # Repository ID
-  root: ./ArrangeVegetables/lerobot_dataset_output # Your root for data file!
+  root: ./ArrangeVegetables # Your root for data file!
 policy:
   type : smolvla
   chunk_size: 5
