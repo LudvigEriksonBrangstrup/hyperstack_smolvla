@@ -1,0 +1,31 @@
+dataset:
+  repo_id: lava8888/ArrangeVegetables # Repository ID
+  root: ./ArrangeVegetables/lerobot_dataset_output # Your root for data file!
+policy:
+  type : smolvla
+  chunk_size: 5
+  n_action_steps: 5
+  device: cpu
+  
+save_checkpoint: true
+output_dir: ./ckpt/smolvla_omy # Save directory
+batch_size: 16
+job_name : smolvla_omy
+resume: false 
+seed : 42
+num_workers: 8
+steps: 20 # 20k steps
+eval_freq: 2 # No evaluation
+log_freq: 3
+save_checkpoint: true
+save_freq: 10_000
+use_policy_training_preset: true
+  
+wandb:
+  enable: true
+  project: smolvla_omy
+  entity: <your_wandb_entity>
+  disable_artifact: true
+  mode: online # Set to "online" if you want to log to WandB in real-time
+  run_id: firstrun
+  notes: firsruns
