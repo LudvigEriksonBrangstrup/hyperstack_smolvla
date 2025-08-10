@@ -5,7 +5,7 @@ policy:
   type : smolvla
   chunk_size: 5
   n_action_steps: 5
-  device: cpu
+  device: cuda
   
 save_checkpoint: true
 output_dir: ./ckpt/smolvla_omy # Save directory
@@ -14,11 +14,11 @@ job_name : smolvla_omy
 resume: false 
 seed : 42
 num_workers: 8
-steps: 20 # 20k steps
-eval_freq: 2 # No evaluation
-log_freq: 3
+steps: 20_000 # 20k steps
+eval_freq: 2_000 # No evaluation
+log_freq: 2_000 # Log every 2k steps
 save_checkpoint: true
-save_freq: 10_000
+save_freq: 50_000
 use_policy_training_preset: true
   
 wandb:
