@@ -205,6 +205,8 @@ def train(cfg: TrainPipelineConfig):
 
     logging.info("Start offline training on a fixed dataset")
     for _ in range(step, cfg.steps):
+        if step % 10 == 0:
+            print(f"Step {step} of {cfg.steps}")
         start_time = time.perf_counter()
         batch = next(dl_iter)
         train_tracker.dataloading_s = time.perf_counter() - start_time
