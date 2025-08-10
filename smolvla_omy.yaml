@@ -23,9 +23,9 @@ use_policy_training_preset: true
   
 wandb:
   enable: true
-  project: smolvla_omy
-  entity: <your_wandb_entity>
+  project: smolVLA
+  entity: qualiastudios
   disable_artifact: true
   mode: online # Set to "online" if you want to log to WandB in real-time
   run_id: firstrun
-  notes: firsruns
+  notes: first
