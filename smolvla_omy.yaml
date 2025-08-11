@@ -1,6 +1,6 @@
 dataset:
-  repo_id: lava8888/ArrangeVegetables # Repository ID
-  root: ./ArrangeVegetables # Your root for data file!
+  repo_id: lava8888/PnPCounterToSink # Repository ID
+  root: ./PnPCounterToSink # Your root for data file!
 policy:
   type : smolvla
   chunk_size: 5
@@ -9,8 +9,8 @@ policy:
   
 save_checkpoint: true
 output_dir: ./ckpt/smolvla_omy # Save directory
-batch_size: 360
-job_name : smolvla_2
+batch_size: 350
+job_name : smolvla_6
 resume: false 
 seed : 42
 num_workers: 24
@@ -27,5 +27,5 @@ wandb:
   entity: qualiastudios
   disable_artifact: true
   mode: online # Set to "online" if you want to log to WandB in real-time
-  run_id: 7
+  run_id: 12
   notes: first
