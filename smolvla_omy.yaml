@@ -9,16 +9,16 @@ policy:
   
 save_checkpoint: true
 output_dir: ./ckpt/smolvla_omy # Save directory
-batch_size: 375
+batch_size: 360
 job_name : smolvla_2
 resume: false 
 seed : 42
 num_workers: 24
-steps: 20_000 # 20k steps
+steps: 1_000 # 1k steps
 eval_freq: 5 # No evaluation
 log_freq: 1 # Log every 10 steps
 save_checkpoint: true
-save_freq: 500
+save_freq: 50
 use_policy_training_preset: true
   
 wandb:
@@ -27,5 +27,5 @@ wandb:
   entity: qualiastudios
   disable_artifact: true
   mode: online # Set to "online" if you want to log to WandB in real-time
-  run_id: 3
+  run_id: 7
   notes: first
