@@ -1,3 +1,16 @@
 ArrangeVegetables
 ckpt
-PnpCounterToSink
+PnPCounterToCab
+PnPCounterToSink
+PnPMicrowaveToCounter
+PnPStoveToCounter
+OpenSingleDoor
+CloseDrawer
+TurnOnMicrowave
+TurnOnSinkFaucet
+TurnOnStove
+ArrangeVegetables
+MicrowaveThawing
+RestockPantry
+PreSoakPan
+PrepareCoffee

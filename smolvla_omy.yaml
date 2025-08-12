@@ -1,6 +1,6 @@
 dataset:
-  repo_id: lava8888/PnPCounterToSink # Repository ID
-  root: ./PnPCounterToSink # Your root for data file!
+  repo_id: lava8888/PnPStoveToCounter # Repository ID
+  root: ./PnPStoveToCounter # Your root for data file!
 policy:
   type : smolvla
   chunk_size: 5
@@ -9,23 +9,23 @@ policy:
   
 save_checkpoint: true
 output_dir: ./ckpt/smolvla_omy # Save directory
-batch_size: 350
-job_name : smolvla_6
+batch_size: 32
+job_name : smolvla_32
 resume: false 
 seed : 42
-num_workers: 24
-steps: 1_000 # 1k steps
-eval_freq: 5 # No evaluation
-log_freq: 1 # Log every 10 steps
+num_workers: 18
+steps: 6_000 # 1k steps
+eval_freq: -1 # No evaluation
+log_freq: 5 # Log every 10 steps
 save_checkpoint: true
-save_freq: 50
+save_freq: 500
 use_policy_training_preset: true
   
 wandb:
   enable: true
-  project: smolVLA
+  project: smolVLA_65_batchsize
   entity: qualiastudios
   disable_artifact: true
   mode: online # Set to "online" if you want to log to WandB in real-time
-  run_id: 12
+  run_id: 31
   notes: first
