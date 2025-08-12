@@ -9,7 +9,7 @@ policy:
   
 save_checkpoint: true
 output_dir: ./ckpt/smolvla_omy # Save directory
-batch_size: 32
+batch_size: 64
 job_name : smolvla_32
 resume: false 
 seed : 42
@@ -18,7 +18,7 @@ steps: 6_000 # 1k steps
 eval_freq: -1 # No evaluation
 log_freq: 5 # Log every 10 steps
 save_checkpoint: true
-save_freq: 500
+save_freq: 400
 use_policy_training_preset: true
   
 wandb:
