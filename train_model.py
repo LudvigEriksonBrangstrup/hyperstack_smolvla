@@ -139,7 +139,7 @@ def train(cfg: TrainPipelineConfig):
     if cfg.policy.type == "pi0":
         cfg.policy.pretrained_path = 'lerobot/pi0'
     elif cfg.policy.type == 'smolvla':
-        cfg.policy.pretrained_path = 'lerobot/smolvla_base'
+        cfg.policy.pretrained_path = 'Lava8888/PnPStoveToCounter_6000'   # 'lerobot/smolvla_base'
     policy = make_policy(
         cfg=cfg.policy,
         ds_meta=dataset.meta,
